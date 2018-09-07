@@ -86,9 +86,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril.config=huaweiSignalStrength
 endif
 
 # Recovery
