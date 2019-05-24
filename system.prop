@@ -17,3 +17,6 @@ ro.telephony.isHisiRIL=true
 
 # Disable statsd
 ro.statsd.enable=false
+
+# Fingerprint Gestures
+sys.fpnav.enabled=1
