@@ -1,2 +1,5 @@
 # Allow vold to delete /data/user/0 if he thinks it is useful
 allow vold system_data_file:lnk_file { unlink };
+
+# Allow mediaextractor to read real sdcard
+allow mediaextractor sdcard_type:file read;
