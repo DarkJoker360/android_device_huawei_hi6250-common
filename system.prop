@@ -6,6 +6,9 @@ ro.config.vc_call_vol_steps=7
 # Enable ADB authentication
 ro.adb.secure=1
 
+# Camera
+persist.sys.camera.huawei=true
+
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
