@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
     libshims_hisupl \
     libshims_hwsmartdisplay_jni
 
+# Speed-up stuff
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.image-dex2oat-filter=verify-none
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.hi6250
