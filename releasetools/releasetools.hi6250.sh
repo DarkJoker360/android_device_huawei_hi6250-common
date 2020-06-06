@@ -51,7 +51,6 @@ if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.r
     sed -i "/(type exception_device)/d;/(roletype object_r exception_device)/d" /system/etc/selinux/plat_sepolicy.cil
     sed -i "/(type hisee_blkdev)/d;/(roletype object_r hisee_blkdev)/d" /system/etc/selinux/plat_sepolicy.cil
     sed -i "/(type hisee_data_file)/d;/(roletype object_r hisee_data_file)/d" /system/etc/selinux/plat_sepolicy.cil
-    sed -i "/(type irda_device)/d;/(roletype object_r irda_device)/d" /system/etc/selinux/plat_sepolicy.cil
     sed -i "/(type jank_device)/d;/(roletype object_r jank_device)/d" /system/etc/selinux/plat_sepolicy.cil
     sed -i "/(type logcat_data_file)/d;/(roletype object_r logcat_data_file)/d" /system/etc/selinux/plat_sepolicy.cil
     sed -i "/(type logcat_device)/d;/(roletype object_r logcat_device)/d" /system/etc/selinux/plat_sepolicy.cil
@@ -98,9 +97,6 @@ if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.r
     sed -i "/\/dev\/hwlog_jank/d" /system/etc/selinux/plat_file_contexts
     sed -i "/\/dev\/hwlog_switch/d" /system/etc/selinux/plat_file_contexts
     sed -i "/\/dev\/hwlog_exception/d" /system/etc/selinux/plat_file_contexts
-
-    # Remove duplicated labels (IR blaster)
-    sed -i "/\/dev\/ttyAMA0/d" /system/etc/selinux/plat_file_contexts
 
     # Remove duplicated labels (Logging (yes dumb...))
     sed -i "/\/data\/log(\/.*)?/d" /system/etc/selinux/plat_file_contexts
