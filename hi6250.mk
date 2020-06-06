@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/huawei/hi6250-common/hi6250-common-vendor.mk)
+$(call inherit-product, vendor/huawei/hi6250-common/hi6250-common-vendor.mk)
 
 # APN configs
 ifneq ($(TARGET_AOSP_BASED),)
