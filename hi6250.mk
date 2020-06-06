@@ -17,10 +17,8 @@
 $(call inherit-product, vendor/huawei/hi6250-common/hi6250-common-vendor.mk)
 
 # APN configs
-ifneq ($(TARGET_AOSP_BASED),)
 PRODUCT_COPY_FILES += \
         device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
-endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
