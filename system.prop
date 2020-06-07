@@ -30,5 +30,7 @@ persist.debug.wfd.enable=0
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
-# Disable statsd
+# Storage
 ro.statsd.enable=false
+ro.sys.sdcardfs=1
+persist.sys.adoptable_fbe=true
