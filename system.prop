@@ -6,6 +6,11 @@ ro.config.vc_call_vol_steps=7
 # Enable ADB authentication
 ro.adb.secure=1
 
+# Bluetooth
+persist.sys.bt.unsupport.features=00000001
+persist.sys.bt.unsupport.states=000000000000000000000011111
+persist.sys.bt.unsupport.stdfeatures=000001
+
 # Camera
 persist.sys.camera.huawei=true
 
