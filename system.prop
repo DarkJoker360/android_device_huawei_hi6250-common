@@ -32,3 +32,8 @@ ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # RIL
 ro.telephony.isHisiRIL=true
+
+# Storage
+ro.statsd.enable=false
+ro.sys.sdcardfs=1
+persist.sys.adoptable_fbe=true
