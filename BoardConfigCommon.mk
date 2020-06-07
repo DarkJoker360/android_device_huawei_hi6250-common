@@ -50,9 +50,6 @@ TARGET_EXFAT_DRIVER := exfat
 BOARD_HARDWARE_CLASS += \
     $(VENDOR_PATH)/lineagehw
 
-# Partitions
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3707764736
-
 # Properties
 TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 
