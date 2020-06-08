@@ -36,7 +36,7 @@ persist.debug.wfd.enable=0
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # RIL
-ro.telephony.isHisiRIL=true
+persist.sys.radio.huawei=true
 
 # Storage
 ro.statsd.enable=false
