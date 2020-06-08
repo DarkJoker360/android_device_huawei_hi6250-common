@@ -7,8 +7,8 @@ on init
     mount none /system/etc/permissions/android.hardware.bluetooth_le.xml /vendor/etc/permissions/android.hardware.bluetooth_le.xml
 
 on property:sys.boot_completed=1
-    write /sys/class/hw_power/charger/direct_charger/iin_thermal 4500
-    write /sys/class/hw_power/charger/charge_data/iin_thermal 2000
+    write /sys/class/hw_power/charger/direct_charger/iin_thermal 2750
+    write /sys/class/hw_power/charger/charge_data/iin_thermal 1000
 
 on property:ro.lineage.device=*
     setprop qemu.hw.mainkeys 1
