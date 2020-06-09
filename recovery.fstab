@@ -1,0 +1,45 @@
+# System Partitions
+/cache		ext4		/dev/block/bootdevice/by-name/cache		flags=display="Cache";backup=1;wipeingui
+/cust		ext4		/dev/block/bootdevice/by-name/cust		flags=display="Cust";backup=1;flashimg
+/data		f2fs		/dev/block/bootdevice/by-name/userdata		flags=display="Data";backup=1;flashimg;settingsstorage;wipeingui
+/odm		ext4		/dev/block/bootdevice/by-name/odm		flags=display="Odm";backup=1;flashimg
+/kernel		emmc		/dev/block/bootdevice/by-name/kernel		flags=display="Kernel";backup=1;flashimg
+/ramdisk	emmc		/dev/block/bootdevice/by-name/ramdisk		flags=display="Ramdisk";backup=1;flashimg
+/product	ext4		/dev/block/bootdevice/by-name/product		flags=display="Product";backup=0;wipeingui;flashimg
+/product_image	emmc		/dev/block/bootdevice/by-name/product		flags=display="Product Image";backup=1;flashimg
+/system		ext4		/dev/block/bootdevice/by-name/system		flags=display="System";backup=1;flashimg
+/system_image	emmc		/dev/block/bootdevice/by-name/system		flags=display="System Image";backup=1;flashimg
+/vendor		ext4		/dev/block/bootdevice/by-name/vendor		flags=display="Vendor";backup=1;wipeingui;flashimg
+/vendor_image	emmc		/dev/block/bootdevice/by-name/vendor		flags=display="Vendor Image";backup=1;flashimg
+/version	ext4		/dev/block/bootdevice/by-name/version		flags=display="Version";backup=1;flashimg
+/version_image  emmc            /dev/block/bootdevice/by-name/version           flags=display="Version Image";backup=1;flashimg
+
+# Recovery(s)
+/erecovery_ramdisk  emmc	/dev/block/bootdevice/by-name/erecovery_ramdisk	flags=display="eRecovery Ramdisk";backup=1;flashimg
+/erecovery_kernel   emmc	/dev/block/bootdevice/by-name/erecovery_kernel	flags=display="eRecovery Kernel";backup=1;flashimg
+/erecovery_vbmeta   emmc	/dev/block/bootdevice/by-name/erecovery_vbmeta	flags=display="eRecovery Vbmeta";backup=1;flashimg
+/erecovery_vendor   emmc	/dev/block/bootdevice/by-name/erecovery_vendor	flags=display="eRecovery Vendor";backup=1;flashimg
+/recovery_vbmeta    emmc        /dev/block/bootdevice/by-name/recovery_vbmeta	flags=display="Recovery Vbmeta ";backup=1;flashimg
+/recovery_vendor    emmc        /dev/block/bootdevice/by-name/recovery_vendor	flags=display="Recovery Vendor";backup=1;flashimg
+/recovery_ramdisk   emmc        /dev/block/bootdevice/by-name/recovery_ramdisk  flags=display="Recovery Ramdisk";backup=1;flashimg
+
+# Protected partitions
+/fastboot	emmc		/dev/block/bootdevice/by-name/fastboot	flags=display="Fastboot";backup=1;flashimg
+/xloader	emmc            /dev/block/bootdevice/by-name/xloader	flags=display="XLoader";backup=1;flashimg
+/frp		emmc		/dev/block/bootdevice/by-name/frp	flags=display="FRP";backup=1;wipeingui
+/misc		emmc		/dev/block/bootdevice/by-name/misc	flags=display="Misc";backup=1
+/nvme		emmc		/dev/block/bootdevice/by-name/nvme	flags=display="NVME";backup=1;flashimg
+/oeminfo        emmc		/dev/block/bootdevice/by-name/oeminfo	flags=display="Oeminfo";backup=1;flashimg
+/splash2	ext4		/dev/block/bootdevice/by-name/splash2	flags=display="Splash2";backup=1
+/vbmeta		emmc		/dev/block/bootdevice/by-name/vbmeta	flags=display="VBMeta";backup=1;flashimg
+/modem_fw	emmc		/dev/block/bootdevice/by-name/modem_fw	flags=display="Modem_fw Image";backup=1;flashimg
+/modem_om	emmc		/dev/block/bootdevice/by-name/modem_om	flags=display="Modem_om Image";backup=1;flashimg
+/modemnvm_backup	emmc	/dev/block/bootdevice/by-name/modemnvm_backup	flags=display="modemnvm_backup";backup=1;flashimg
+/modemnvm_factory	emmc	/dev/block/bootdevice/by-name/modemnvm_factory	flags=display="modemnvm_factory";backup=1;flashimg
+/modemnvm_img		emmc	/dev/block/bootdevice/by-name/modemnvm_img	flags=display="modemnvm_img";backup=1;flashimg
+/modemnvm_system	emmc	/dev/block/bootdevice/by-name/modemnvm_system	flags=display="modemnvm_system";backup=1;flashimg
+/modemnvm_update	emmc	/dev/block/bootdevice/by-name/modemnvm_update	flags=display="modemnvm_update";backup=1;flashimg
+
+# External storage
+/external_sd	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=display="MicroSD Card";settingsstorage;wipeingui;removable
+/usbotg		auto		/dev/block/sda1         /dev/block/sda		flags=display="USB OTG";storage;removable;wipeingui;backup=0
