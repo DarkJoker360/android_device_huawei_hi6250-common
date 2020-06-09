@@ -16,6 +16,7 @@
 #
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 export OF_MAINTAINER=DarkDroidDev
+export OF_FL_PATH1="/sys/class/leds/torch"
 
 # let's see what are our build VARs
 if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
