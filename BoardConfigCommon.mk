@@ -23,6 +23,8 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
+COMMON_PATH := device/huawei/hi6250-common
+
 # Arch
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -40,6 +42,10 @@ TARGET_CPU_SMP := true
 
 # Board
 TARGET_BOARD_PLATFORM := hi6250
+
+# Common fstab and init.rc files
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery.fstab
+TARGET_RECOVERY_DEVICE_DIRS += $(COMMON_PATH)
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := hi6250
