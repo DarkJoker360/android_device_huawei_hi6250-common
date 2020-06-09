@@ -26,7 +26,7 @@
 # Protected partitions
 /fastboot	emmc		/dev/block/bootdevice/by-name/fastboot	flags=display="Fastboot";backup=1;flashimg
 /xloader	emmc            /dev/block/bootdevice/by-name/xloader	flags=display="XLoader";backup=1;flashimg
-/frp		emmc		/dev/block/bootdevice/by-name/frp	flags=display="FRP";backup=1;wipeingui
+/frp		emmc		/dev/block/bootdevice/by-name/frp	flags=display="FRP";backup=1
 /misc		emmc		/dev/block/bootdevice/by-name/misc	flags=display="Misc";backup=1
 /nvme		emmc		/dev/block/bootdevice/by-name/nvme	flags=display="NVME";backup=1;flashimg
 /oeminfo        emmc		/dev/block/bootdevice/by-name/oeminfo	flags=display="Oeminfo";backup=1;flashimg
@@ -42,4 +42,4 @@
 
 # External storage
 /external_sd	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=display="MicroSD Card";settingsstorage;wipeingui;removable
-/usbotg		auto		/dev/block/sda1         /dev/block/sda		flags=display="USB OTG";storage;removable;wipeingui;backup=0
+/usbotg		auto		/dev/block/sda1         /dev/block/sda		flags=display="USB OTG";storage;removable;backup=0
