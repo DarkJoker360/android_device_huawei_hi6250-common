@@ -14,17 +14,5 @@
 #
 # Please maintain this if you use this script or any part of it
 #
-export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
-export OF_MAINTAINER=DarkDroidDev
-export OF_FL_PATH1="/sys/class/leds/torch"
-export ALLOW_MISSING_DEPENDENCIES=true
-export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery_ramdisk"
-export FOX_DELETE_AROMAFM=1
-export FOX_VERSION=1.1_R10.0
 
-# let's see what are our build VARs
-if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
-	export | grep "FOX" >> $FOX_BUILD_LOG_FILE
-	export | grep "OF_" >> $FOX_BUILD_LOG_FILE
-	export | grep "TW_" >> $FOX_BUILD_LOG_FILE
-fi
+export ALLOW_MISSING_DEPENDENCIES=true
