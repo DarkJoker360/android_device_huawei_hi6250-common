@@ -1,0 +1,4 @@
+allow kernel device:dir { write };
+allow kernel block_device:dir { search };
+allow kernel device:chr_file { write };
+allow kernel recovery:fd { use };

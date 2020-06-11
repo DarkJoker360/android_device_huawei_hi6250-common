@@ -1,0 +1,4 @@
+allow recovery default_prop:property_service { set };
+allow recovery media_rw_data_file:file { getattr read open write setattr create };
+allow recovery media_rw_data_file:dir { add_name write };
+allow recovery mtp_device:chr_file { ioctl };
