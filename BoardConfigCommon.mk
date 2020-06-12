@@ -46,10 +46,6 @@ WITH_DEXPREOPT := true
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := exfat
 
-# Lineage hardware
-BOARD_HARDWARE_CLASS += \
-    $(VENDOR_PATH)/lineagehw
-
 # Properties
 TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 
