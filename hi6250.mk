@@ -29,9 +29,14 @@ COMMON_PATH := device/huawei/hi6250-common
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/dummykernel:kernel
 
-# MTP
+# Usb
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=manufacture,adb,mtp \
     ro.sys.usb.storage.type=mtp,adb \
     sys.usb.configfs=1 \
-    sys.usb.controller=ff100000.dwc3
+    sys.usb.controller=ff100000.dwc3 \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+    ro.allow.mock.location=0 \
+    service.adb.root=1 \
+    ro.debuggable=1

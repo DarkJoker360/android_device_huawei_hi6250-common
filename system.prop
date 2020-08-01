@@ -1,6 +1,3 @@
-# Adb
-ro.adb.secure=0
-
 # USB
 persist.sys.sdcardfs.emulated=1
 persist.sys.sdcardfs.public=1
@@ -17,7 +14,5 @@ ro.build.selinux=1
 ro.treble.enabled=true
 
 # Additional props
-ro.adb.secure=0
-ro.secure=0
 ro.zygote=zygote64_32
 
