@@ -23,7 +23,7 @@ sed -i "/genfscon exfat/d" /system/etc/selinux/plat_sepolicy.cil
 sed -i "/genfscon fuseblk/d" /system/etc/selinux/plat_sepolicy.cil
 
 # Remove unexisting groups from daemons
-sed -i "/group reserved_disk/d" /system/etc/init/vold.rc
+sed -i "/group root reserved_disk/d" /system/etc/init/vold.rc
 sed -i "s/group incidentd/group/" /system/etc/init/incidentd.rc
 sed -i "/user incidentd/d" /system/etc/init/incidentd.rc
 
