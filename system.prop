@@ -9,6 +9,9 @@ ro.adb.secure=1
 # Camera
 persist.sys.camera.huawei=true
 
+# Fingerprint Gestures
+sys.fpnav.enabled=1
+
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 

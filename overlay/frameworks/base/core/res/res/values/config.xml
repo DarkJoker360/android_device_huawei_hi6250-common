@@ -225,4 +225,13 @@
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
 
+    <!-- FP Keys -->
+    <bool name="config_showNavigationBar">true</bool>
+    <bool name="config_supportSystemNavigationKeys">true</bool>
+
+    <!-- Indicate whether the lid state impacts the accessibility of
+    the navigation buttons.  0 means it doesn't, 1 means it is accessible
+    when the lid is open, 2 means it is accessible when the lid is
+    closed.  The default is 0. -->
+    <integer name="config_lidNavigationAccessibility">1</integer>
 </resources>
