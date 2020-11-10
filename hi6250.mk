@@ -25,6 +25,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.bcm43xx.rc \
