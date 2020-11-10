@@ -16,20 +16,10 @@
 
 $(call inherit-product-if-exists, vendor/huawei/hi6250-common/hi6250-common-vendor.mk)
 
-# APN configs
-ifneq ($(TARGET_AOSP_BASED),)
-PRODUCT_COPY_FILES += \
-        device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
-endif
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-ifeq ($(TARGET_AOSP_BASED),)
-DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-endif
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -82,13 +72,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cust.cdrom=/dev/null
 
 # Radio
-ifeq ($(TARGET_AOSP_BASED),)
 PRODUCT_PACKAGES += \
     qti-telephony-common
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-endif
 
 # Recovery
 PRODUCT_PACKAGES += \
