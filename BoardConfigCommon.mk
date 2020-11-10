@@ -16,7 +16,7 @@
 
 include build/make/target/board/generic_arm64_a/BoardConfig.mk
 
-VENDOR_PATH := device/huawei/kirin970-common
+VENDOR_PATH := device/huawei/hi6250-common
 
 # Platform
 TARGET_ARCH := arm64
@@ -71,7 +71,7 @@ TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 ifeq ($(TARGET_AOSP_BASED),)
 BOARD_PROVIDES_BOOTLOADER_MESSAGE := true
 endif
-TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.kirin970
+TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.hi6250
 
 # Release tools
 TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
