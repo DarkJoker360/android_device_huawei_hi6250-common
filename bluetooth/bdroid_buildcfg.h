@@ -13,6 +13,7 @@ typedef struct {
 
 static const device_t devices[] = {
     {"HWPRA", "Huawei P8 Lite 2017"},
+    {"HWWAS", "Huawei P10 Lite"},
 };
 
 static inline const char *BtmGetDefaultName()
