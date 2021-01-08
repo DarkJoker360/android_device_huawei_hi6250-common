@@ -25,6 +25,9 @@ debug.sf.latch_unsignaled=1
 hwui.disable_vsync=true 
 ro.config.enable.hw_accel=true 
 video.accelerate.hw=1
+persist.sys.sf.native_mode=1
+persist.sys.sf.color_mode=1.0
+persist.sys.sf.color_saturation=1.1
 
 # Media
 persist.sys.google_avc_enc=0 
