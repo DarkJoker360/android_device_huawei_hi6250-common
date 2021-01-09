@@ -2639,6 +2639,16 @@ lib64/libdisplayengineservice.so:lib64/libdisplayenginesvc_1_0.so|c94660c1e9a324
 lib64/vendor.huawei.hardware.graphics.displayeffect@1.1.so|a20541e86de00e4b0ed5a65e8cff27bab2e617b5
 lib64/vendor.huawei.hardware.hwdisplay.displayengine@1.1.so|4ab9d182e1b01600b89f0e817736d2ee9a089624
 
+# Nfc
+framework/com.android.nfc_extras.jar
+lib/android.hardware.nfc@1.0.so
+lib/libnfc_ndef.so
+lib64/android.hardware.nfc@1.0.so
+lib64/android.hardware.nfc@1.1.so
+lib64/libnfc-nci.so
+lib64/libnfc_nci_jni.so
+lib64/libnfc_ndef.so
+
 # Radio
 emui/base/global/ons.bin
 
@@ -2826,6 +2836,7 @@ lib64/android.hardware.media@1.0.so:lib64/vndk-26/android.hardware.media@1.0.so
 lib64/android.hardware.media.omx@1.0.so:lib64/vndk-26/android.hardware.media.omx@1.0.so
 lib64/android.hardware.memtrack@1.0.so:lib64/vndk-26/android.hardware.memtrack@1.0.so
 lib64/android.hardware.nfc@1.0.so:lib64/vndk-26/android.hardware.nfc@1.0.so
+lib64/android.hardware.nfc@1.1.so:lib64/vndk-26/android.hardware.nfc@1.1.so
 lib64/android.hardware.power@1.0.so:lib64/vndk-26/android.hardware.power@1.0.so
 lib64/android.hardware.radio@1.0.so:lib64/vndk-26/android.hardware.radio@1.0.so
 lib64/android.hardware.radio.deprecated@1.0.so:lib64/vndk-26/android.hardware.radio.deprecated@1.0.so
